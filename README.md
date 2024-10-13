@@ -3,7 +3,7 @@
 вибрати всі стовпчики (За допомогою wildcard “*”) з таблиці products;
 вибрати тільки стовпчики name, phone з таблиці shippers.
 
-![Task 1, p1]("Task 1, p1.png")
+![Task 1, p1]("Task-1-1.png")
 
 **Рішення**
 
