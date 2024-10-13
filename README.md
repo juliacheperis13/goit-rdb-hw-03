@@ -5,8 +5,10 @@
 
 **Рішення**
 
+``` sql
 SELECT * FROM new_table.products;
 SELECT name, phone FROM new_table.shippers;
+```
 
 ![Task 1, p1](./images/Task-1-1.png)
 
@@ -17,10 +19,12 @@ SELECT name, phone FROM new_table.shippers;
 
 **Рішення** 
 
+``` sql
 SELECT AVG(price) AS average_price, 
        MAX(price) AS max_price, 
        MIN(price) AS min_price
 FROM new_table.products;
+```
 
 ![Task 2](./images/Task-2.png)
 
@@ -30,10 +34,12 @@ FROM new_table.products;
  
 **Рішення** 
 
+``` sql
 SELECT DISTINCT category_id, price 
 FROM new_table.products
 ORDER BY price DESC
 LIMIT 10;
+```
 
 ![Task 3](./images/Task-3.png)
 
@@ -41,6 +47,7 @@ LIMIT 10;
 
 **Рішення** 
 
+``` sql
 SELECT COUNT(*) AS product_count
 FROM new_table.products
 WHERE price BETWEEN 20 AND 100;
@@ -48,6 +55,7 @@ WHERE price BETWEEN 20 AND 100;
 SELECT COUNT(*) AS product_count
 FROM new_table.products
 WHERE price >= 20 AND price <= 100;
+```
 
 ![Task 4, p1](./images/Task-4-1.png)
 
@@ -55,10 +63,12 @@ WHERE price >= 20 AND price <= 100;
 
 5. Напишіть SQL команду, за допомогою якої можна знайти кількість продуктів (рядків) та середню ціну (price) у кожного постачальника (supplier_id)
 
+``` sql
 SELECT supplier_id, 
        COUNT(*) AS product_count, 
        AVG(price) AS average_price
 FROM new_table.products
 GROUP BY supplier_id;
+```
 
 ![Task 5](./images/Task-5.png)
